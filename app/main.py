@@ -17,13 +17,13 @@ import logging
 from flask import Flask
 from flask import request
 from flask import Response
-from airports import Airports
+from app import vuln
 
 app = Flask(__name__)
 airport_util = Airports()
 
-@app.route('/main', methods=['GET'])
-def main():
+@app.route('/home', methods=['GET'])
+def home():
     response_text = '{ "message": "VAmPI the Vulnerable API", "help": "VAmPI is a vulnerable on purpose API. It was ' \
                     'created in order to evaluate the efficiency of third party tools in identifying vulnerabilities ' \
                     'in APIs but it can also be used in learning/teaching purposes.", "vulnerable":' + "{}".format(vuln) + "}"
