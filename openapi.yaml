@@ -22,10 +22,10 @@ host: "YOUR-PROJECT-ID.appspot.com"
 schemes:
   - "https"
 paths:
-  "/main":
+  "/home":
     get:
       description: "Get the airport name for a given IATA code."
-      operationId: "main"
+      operationId: "home"
       responses:
         200:
           description: "Success."
