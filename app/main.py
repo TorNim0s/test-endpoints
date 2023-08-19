@@ -20,7 +20,6 @@ from flask import Response
 from app import vuln
 
 app = Flask(__name__)
-airport_util = Airports()
 
 @app.route('/home', methods=['GET'])
 def home():
